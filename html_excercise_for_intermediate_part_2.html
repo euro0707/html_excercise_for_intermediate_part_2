@@ -10,56 +10,57 @@
 
 <body>
     <h1>フォームレッスン</h1>
-    <p>以下のフォームを埋めてください。（※は必須項目）</p>
+    <p>以下のフォームを埋めてください（※は必須項目）</p>
 
-    <form action="#">
+    <form action="">
         <p>
-            <label>※ユーザー名:<input type="text" required></label>
+            <label>※ユーザー名:<input type="text" id="username" name="username" required></label>
         </p>
         <p>
-            <label>※パスワード（６文字以上）:<input type="password" required minlength="6"></label>
+            <label>※パスワード（６文字以上）:<input type="password" id="password" name="password" required minlength="6"></label>
         </p>
 
         <p>
-            ※性別:<input type="radio" required id="contactChoice1" name="contact" value="email">
-            <label for="contactChoice1">女</label>
+            ※性別:<input type="radio" required id="woman1" name="gender" value="woman">
+            <label for="woman1">女</label>
 
-            <input type="radio" required id="contactChoice2" name="contact" value="phone">
-            <label for="contactChoice2">男</label>
+            <input type="radio" required id="man2" name="gender" value="man">
+            <label for="man2">男</label>
         </p>
 
-        <form action="">
-            <p>
-                <label>※生年月日
-                    <select name="年" required>
-                        <option value="">---</option>
-                        <option value="2000">2000</option>
-                        <option value="2001">2001</option>
-                        <option value="2002">2002</option>
-                    </select>年
+        <p>
+            <label>※生年月日
+                <select name="year" id="year" required>
+                    <option value="">---</option>
+                    <option value="2000">2000</option>
+                    <option value="2001">2001</option>
+                    <option value="2002">2002</option>
+                </select>年
 
-                    <select name="月" required>
-                        <option value="">---</option>
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                    </select>月
+                <select name="month" id="month" required>
+                    <option value="">---</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="12">12</option>
+                </select>月
 
-                    <select name="日" required>
-                        <option value="">---</option>
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                    </select>日
-                </label>
-            </p>
+                <select name="day" id="day" required>
+                    <option value="">---</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="31">31</option>
+                </select>日
+            </label>
+        </p>
 
-            <label for="textbox">備考欄:</label>
-            <textarea name="text" id="textbox" cols="30" rows="10"></textarea>
-            </div>
-            <div>
-                <input type="submit">
-            </div>
+        <label for="textbox">備考欄:</label>
+        <textarea name="text" id="textbox" cols="30" rows="10"></textarea>
+        </div>
+        <div>
+            <input type="submit">
+        </div>
 </body>
 
 </html>
